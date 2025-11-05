@@ -6,7 +6,7 @@ const content = {
     experienciaTitulo: "Experiência Profissional",
     formacaoTitulo: "Formação Acadêmica",
     certificacoesTitulo: "Licenças e Certificações",
-    rodape: "© 2025 Edervan Pereira Silva. Todos os direitos reservados.",
+    rodape: "© 2025 Edervan Pereira Silva.",
     endereco: "Uberlândia, MG, Brasil",
     resumo: "Profissional resiliente e autodidata, com sólida capacidade de resolução de problemas e adaptação a novas tecnologias. Iniciei minha carreira na área de manutenção, onde desenvolvi forte habilidade em diagnóstico técnico e rápida assimilação de ferramentas. Em 2021, realizei uma transição de carreira para o setor administrativo, evoluindo rapidamente para a área de dados. Em cinco anos, me especializei em Power BI e Python, concluí a graduação em Ciência de Dados e alcancei o cargo de Especialista em Dados. Apaixonado por tecnologia e aprendizado contínuo, estou sempre em busca de inovação e aprimoramento.",
     competencias: [
@@ -34,7 +34,7 @@ const content = {
     experienciaTitulo: "Professional Experience",
     formacaoTitulo: "Academic Background",
     certificacoesTitulo: "Licenses and Certifications",
-    rodape: "© 2025 Edervan Pereira Silva. All rights reserved.",
+    rodape: "© 2025 Edervan Pereira Silva.",
     endereco: "Uberlândia, MG, Brazil",
     resumo: "Resilient and self-taught professional with strong problem-solving skills and adaptability to new technologies. I began my career in maintenance, developing diagnostic skills and technical agility. In 2021, I transitioned to administration and quickly evolved into data analytics. Over five years, I specialized in Power BI and Python, earned a degree in Data Science, and became a Data Specialist. Passionate about technology and continuous learning, I seek innovation and improvement.",
     competencias: [

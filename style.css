@@ -146,3 +146,33 @@ footer {
   }
 }
 
+.header-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-list li {
+  margin: 0;
+}
+
+.header-list a {
+  color: #a8d1ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-list a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .header-list {
+    flex-direction: column;
+    align-items: right;
+  }
+}
