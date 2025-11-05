@@ -1,0 +1,148 @@
+/* Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8fc;
+  color: #333;
+}
+
+/* Seletor de idioma com bandeiras */
+#language-selector {
+  text-align: right;
+  padding: 10px 20px;
+  background-color: #e0ecf8;
+}
+
+#language-selector button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+#language-selector button:hover {
+  transform: scale(1.1);
+}
+
+/* Cabeçalho */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header a {
+  color: #a8d1ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1, h2 {
+  color: #004080;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+section p {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  max-height: none;
+}
+
+/* Experiência Profissional com alinhamento */
+.experiencia-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.experiencia-item .cargo {
+  flex: 1;
+  min-width: 200px;
+}
+
+.experiencia-item .tempo {
+  color: #555;
+  font-style: italic;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header, footer {
+    padding: 15px;
+    text-align: left;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  #language-selector {
+    text-align: center;
+  }
+
+  .experiencia-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experiencia-item .tempo {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+}
+
