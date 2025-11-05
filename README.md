@@ -1,36 +1,4 @@
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f8fc;
-      color: #333;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #004080;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a {
-      color: #004080;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .badge {
-      display: inline-block;
-      background-color: #004080;
-      color: white;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 0.9em;
-    }
-  </style>
-</head>
 <body>
   <h1>📄 Currículo Web – Edervan Pereira Silva</h1>
 
