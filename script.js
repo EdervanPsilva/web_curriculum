@@ -177,9 +177,46 @@ function applyLanguage(lang) {
     return;
   }
 
-  menuButton.addEventListener('click', () => {
+  function closeMenu() {
+    nav.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleMenu() {
     const isOpen = nav.classList.toggle('open');
     menuButton.setAttribute('aria-expanded', String(isOpen));
+  }
+
+  menuButton.addEventListener('click', (event) => {
+    event.stopPropagation();
+    toggleMenu();
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 860) {
+        closeMenu();
+      }
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!nav.classList.contains('open')) {
+      return;
+    }
+
+    const clickedInsideNav = nav.contains(event.target);
+    const clickedMenuButton = menuButton.contains(event.target);
+
+    if (!clickedInsideNav && !clickedMenuButton) {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 860) {
+      closeMenu();
+    }
   });
 })();
 

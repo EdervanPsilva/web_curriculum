@@ -28,7 +28,7 @@ body {
 .topbar {
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 40;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,6 +76,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .lang-switch button {
@@ -101,6 +102,7 @@ body {
   padding: 7px 10px;
   font-weight: 700;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .section {
@@ -250,11 +252,6 @@ p {
   overflow: hidden;
 }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.35s ease;
-}
-
 .slide {
   min-width: 100%;
   margin: 0;
@@ -309,26 +306,57 @@ p {
 }
 
 @media (max-width: 860px) {
+  .topbar {
+    padding: 12px 4vw;
+    gap: 10px;
+  }
+
+  .brand {
+    font-size: 1rem;
+    max-width: 52vw;
+    line-height: 1.2;
+  }
+
   .menu-toggle {
     display: inline-block;
   }
 
   .topbar-right {
     margin-left: auto;
+    gap: 8px;
+  }
+
+  .lang-switch button {
+    padding: 6px 8px;
+    font-size: 0.85rem;
   }
 
   .navbar {
-    position: absolute;
+    position: fixed;
     top: 64px;
-    right: 5vw;
-    left: 5vw;
+    left: 4vw;
+    right: 4vw;
+    width: auto;
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(16, 33, 58, 0.12);
     padding: 12px;
     display: none;
     flex-direction: column;
     gap: 8px;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    z-index: 45;
+  }
+
+  .navbar a {
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--blue-100);
+  }
+
+  .navbar a:last-child {
+    border-bottom: 0;
   }
 
   .navbar.open {
@@ -337,5 +365,58 @@ p {
 
   .section {
     padding: 52px 5vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 42px 4vw;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .actions {
+    gap: 10px;
+  }
+
+  .actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel {
+    padding: 10px 10px 58px;
+  }
+
+  .slide img {
+    max-height: 240px;
+    object-fit: contain;
+    background: var(--white);
+  }
+
+  .slide figcaption {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding: 0 6px;
+  }
+
+  .carousel-btn {
+    top: auto;
+    bottom: 12px;
+    transform: none;
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
+  }
+
+  .carousel-btn.prev {
+    left: calc(50% - 42px);
+  }
+
+  .carousel-btn.next {
+    right: calc(50% - 42px);
   }
 }
