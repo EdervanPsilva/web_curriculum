@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Amostra de dashboard executivo">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b3d91" />
+      <stop offset="100%" stop-color="#2a65bf" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="#f6f9ff" />
+  <rect x="40" y="40" width="1200" height="640" rx="18" fill="url(#g1)" opacity="0.08" />
+  <rect x="90" y="90" width="350" height="140" rx="12" fill="#0b3d91" opacity="0.85" />
+  <rect x="465" y="90" width="350" height="140" rx="12" fill="#2a65bf" opacity="0.9" />
+  <rect x="840" y="90" width="350" height="140" rx="12" fill="#154fa6" opacity="0.88" />
+  <rect x="90" y="270" width="730" height="350" rx="12" fill="#ffffff" stroke="#cfe0ff" stroke-width="3" />
+  <rect x="850" y="270" width="340" height="350" rx="12" fill="#ffffff" stroke="#cfe0ff" stroke-width="3" />
+  <polyline points="140,560 240,470 320,505 430,410 560,480 680,360 760,395" fill="none" stroke="#2a65bf" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="760" cy="395" r="8" fill="#0b3d91" />
+  <text x="105" y="155" font-family="Arial, sans-serif" font-size="44" fill="#ffffff">Dashboard Executivo</text>
+  <text x="875" y="335" font-family="Arial, sans-serif" font-size="28" fill="#154fa6">Indicadores</text>
+</svg>

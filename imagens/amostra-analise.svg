@@ -1,0 +1,14 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Amostra de análise de dados">
+  <rect width="1280" height="720" fill="#f8fbff" />
+  <rect x="80" y="80" width="1120" height="560" rx="20" fill="#ffffff" stroke="#d6e5ff" stroke-width="4" />
+  <text x="120" y="150" font-family="Arial, sans-serif" font-size="46" fill="#0b3d91">Análise de Dados</text>
+  <line x1="150" y1="560" x2="1070" y2="560" stroke="#a7c3ef" stroke-width="4" />
+  <line x1="150" y1="560" x2="150" y2="220" stroke="#a7c3ef" stroke-width="4" />
+  <rect x="220" y="430" width="90" height="130" fill="#2a65bf" />
+  <rect x="360" y="380" width="90" height="180" fill="#154fa6" />
+  <rect x="500" y="340" width="90" height="220" fill="#0b3d91" />
+  <rect x="640" y="300" width="90" height="260" fill="#2a65bf" />
+  <polyline points="220,320 360,300 500,280 640,250 780,230 920,200" fill="none" stroke="#0b3d91" stroke-width="8" stroke-linecap="round" />
+  <circle cx="920" cy="200" r="9" fill="#0b3d91" />
+  <text x="820" y="330" font-family="Arial, sans-serif" font-size="26" fill="#35507a">Tendência de crescimento</text>
+</svg>

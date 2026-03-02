@@ -1,66 +1,107 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title id="page-title">Resume - Edervan Pereira Silva</title>
+  <title>Edervan Pereira Silva | Data Analyst and Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div id="language-selector">
-    <button onclick="switchLanguage('en')" aria-label="English">🇺🇸</button>
-    <button onclick="switchLanguage('pt')" aria-label="Português">🇧🇷</button>
-  </div>
-
-<header>
-  <h1 id="nome">Edervan Pereira Silva</h1>
-  <p id="endereco"></p>
-  <ul class="header-list">
-    <li>
-      <a href="mailto:edervanpereirasilva@gmail.com">edervanpereirasilva@gmail.com</a>
-    </li>
-    <li>
-      <a href="https://wa.me/5534999098046" target="_blank">+55 (34) 99909-8046</a>
-    </li>
-    <li>
-      <a href="http://www.linkedin.com/in/edervan-pereira-silva-485285157" target="_blank">LinkedIn</a>
-    </li>
-    <li>
-      <a href="https://github.com/EdervanPsilva" target="_blank">GitHub</a>
-    </li>
-  </ul>
-</header>
-
+<body data-page="home">
+  <header class="topbar">
+    <a class="brand" href="index.html">Edervan Pereira Silva</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" data-i18n-attr="aria-label:menu.button">Menu</button>
+    <div class="topbar-right">
+      <nav class="navbar" aria-label="Main navigation" data-i18n-attr="aria-label:menu.navAria">
+        <a href="#inicio" data-i18n="menu.home">Home</a>
+        <a href="#sobre" data-i18n="menu.about">About</a>
+        <a href="#servicos" data-i18n="menu.services">Services</a>
+        <a href="amostras.html" data-i18n="menu.samples">Samples</a>
+        <a href="#contato" data-i18n="menu.contact">Contact</a>
+      </nav>
+      <div class="lang-switch" aria-label="Language selector">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="pt">PT</button>
+      </div>
+    </div>
+  </header>
 
   <main>
-    <section>
-      <h2 id="titulo-resumo"></h2>
-      <p id="resumo"></p>
+    <section id="inicio" class="hero section">
+      <div class="container">
+        <p class="eyebrow" data-i18n="home.eyebrow">Clear data. Safer decisions.</p>
+        <h1 data-i18n="home.heroTitle">I turn data into practical actions that drive business results.</h1>
+        <p class="lead" data-i18n="home.heroLead">
+          I am a data analyst and solution developer. I build dashboards, automations, and analyses to reduce uncertainty,
+          increase productivity, and support strategic decisions with confidence.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/5534999098046" target="_blank" rel="noopener noreferrer" data-i18n="home.ctaWhatsapp">Chat on WhatsApp</a>
+          <a class="btn btn-secondary" href="amostras.html" data-i18n="home.ctaSamples">View work samples</a>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2 id="titulo-competencias"></h2>
-      <ul id="competencias"></ul>
+    <section id="sobre" class="section">
+      <div class="container grid two-col">
+        <article class="card">
+          <h2 data-i18n="home.aboutWorkTitle">About my work</h2>
+          <p data-i18n="home.aboutWorkText">
+            I build data-driven solutions for management and operations. My focus is combining technical depth and business vision
+            to deliver reliable reports, clear KPIs, and more efficient workflows.
+          </p>
+        </article>
+        <article class="card">
+          <h2 data-i18n="home.aboutMeTitle">About me</h2>
+          <p data-i18n="home.aboutMeText">
+            I am a self-taught, results-driven professional. My journey includes a career transition, fast growth in data roles,
+            and hands-on experience in high-demand environments.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2 id="titulo-experiencia"></h2>
-      <ul id="experiencia"></ul>
+    <section id="servicos" class="section section-light">
+      <div class="container">
+        <h2 class="section-title" data-i18n="home.servicesTitle">How I can help</h2>
+        <div class="grid three-col">
+          <article class="card service">
+            <h3 data-i18n="home.service1Title">Professional Dashboards</h3>
+            <p data-i18n="home.service1Text">Power BI dashboards built to track critical indicators with fast and simple reading.</p>
+          </article>
+          <article class="card service">
+            <h3 data-i18n="home.service2Title">Process Automation</h3>
+            <p data-i18n="home.service2Text">Automation with Python and Power Platform to reduce repetitive work and gain speed.</p>
+          </article>
+          <article class="card service">
+            <h3 data-i18n="home.service3Title">Decision-Focused Analysis</h3>
+            <p data-i18n="home.service3Text">Data and process diagnostics to remove bottlenecks and accelerate high-impact decisions.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2 id="titulo-formacao"></h2>
-      <p id="formacao"></p>
-    </section>
-
-    <section>
-      <h2 id="titulo-certificacoes"></h2>
-      <ul id="certificacoes"></ul>
+    <section id="contato" class="section">
+      <div class="container contact-box">
+        <h2 data-i18n="home.contactTitle">Ready to level up your decisions with data?</h2>
+        <p data-i18n="home.contactText">
+          Send me a message with your current scenario. In a short conversation, I can show practical ways to improve visibility,
+          control, and performance.
+        </p>
+        <ul>
+          <li><strong data-i18n="home.labelEmail">Email:</strong> <a href="mailto:edervanpereirasilva@gmail.com">edervanpereirasilva@gmail.com</a></li>
+          <li><strong data-i18n="home.labelWhatsApp">WhatsApp:</strong> <a href="https://wa.me/5534999098046" target="_blank" rel="noopener noreferrer">+55 (34) 99909-8046</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/edervan-pereira-silva-485285157" target="_blank" rel="noopener noreferrer">edervan-pereira-silva</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/EdervanPsilva" target="_blank" rel="noopener noreferrer">EdervanPsilva</a></li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p id="rodape"></p>
+  <footer class="footer">
+    <p data-i18n="home.footer">© 2026 Edervan Pereira Silva. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

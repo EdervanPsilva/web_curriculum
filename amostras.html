@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Samples | Edervan Pereira Silva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="samples">
+  <header class="topbar">
+    <a class="brand" href="index.html">Edervan Pereira Silva</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" data-i18n-attr="aria-label:menu.button">Menu</button>
+    <div class="topbar-right">
+      <nav class="navbar" aria-label="Main navigation" data-i18n-attr="aria-label:menu.navAria">
+        <a href="index.html#inicio" data-i18n="menu.home">Home</a>
+        <a href="index.html#sobre" data-i18n="menu.about">About</a>
+        <a href="index.html#servicos" data-i18n="menu.services">Services</a>
+        <a href="amostras.html" data-i18n="menu.samples">Samples</a>
+        <a href="index.html#contato" data-i18n="menu.contact">Contact</a>
+      </nav>
+      <div class="lang-switch" aria-label="Language selector">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="pt">PT</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow" data-i18n="samples.eyebrow">Portfolio</p>
+        <h1 class="page-title" data-i18n="samples.title">Work samples</h1>
+        <p class="lead" data-i18n="samples.lead">
+          This page shows sample dashboards and solutions. You can replace the current images with real screenshots from your projects.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <h2 class="section-title" data-i18n="samples.carouselTitle">Project carousel</h2>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous slide" data-i18n-attr="aria-label:samples.prevAria">‹</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <figure class="slide active">
+                <img src="imagens/amostra-dashboard.svg" alt="Executive dashboard sample" data-i18n-attr="alt:samples.slide1Alt" />
+                <figcaption data-i18n="samples.slide1Caption">Executive dashboard for tracking strategic KPIs.</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="imagens/amostra-automacao.svg" alt="Process automation sample" data-i18n-attr="alt:samples.slide2Alt" />
+                <figcaption data-i18n="samples.slide2Caption">Automation flow to reduce manual tasks and response time.</figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="imagens/amostra-analise.svg" alt="Data analysis sample" data-i18n-attr="alt:samples.slide3Alt" />
+                <figcaption data-i18n="samples.slide3Caption">Comparative analysis to identify performance opportunities.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next slide" data-i18n-attr="aria-label:samples.nextAria">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid three-col">
+        <article class="card">
+          <h3 data-i18n="samples.case1Title">Case 1: Operations Dashboard</h3>
+          <p data-i18n="samples.case1Text">Business context, main objective, tracked KPIs, and delivered results.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="samples.case2Title">Case 2: Report Automation</h3>
+          <p data-i18n="samples.case2Text">Previous process, implemented solution, and measurable time savings.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="samples.case3Title">Case 3: Decision Analysis</h3>
+          <p data-i18n="samples.case3Text">Initial problem, analytical approach, and business impact.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="samples.footer">© 2026 Edervan Pereira Silva. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
