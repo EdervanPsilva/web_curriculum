@@ -420,3 +420,55 @@ p {
     right: calc(50% - 42px);
   }
 }
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--blue-800);
+  color: var(--white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: var(--blue-900);
+}
+
+.btn-secondary {
+  background: var(--blue-050);
+  color: var(--blue-900);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  background: var(--blue-100);
+  border-color: var(--blue-700);
+}
+
+.btn-tertiary {
+  background: var(--blue-050);
+  color: var(--blue-900);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  margin-top: 12px;
+}
+
+.btn-tertiary:hover,
+.btn-tertiary:focus-visible {
+  background: var(--blue-100);
+  border-color: var(--blue-700);
+}
+
+
